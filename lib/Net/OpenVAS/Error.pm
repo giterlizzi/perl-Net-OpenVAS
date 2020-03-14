@@ -65,8 +65,6 @@ Net::OpenVAS::Error - Error helper for Net::OpenVAS
     }
 
 
-=head1 DESCRIPTION
-
 =head1 SUPPORT
 
 =head2 Bugs / Feature Requests

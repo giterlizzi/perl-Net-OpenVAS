@@ -16,7 +16,7 @@ Net::OpenVAS - Perl extension for OpenVAS Scanner
 
 =head1 SYNOPSIS
 
-    use Net::OpenVAS;
+    use Net::OpenVAS qw( -commands );
 
     my $openvas = Net::OpenVAS->new(
         host     => 'localhost:9390',
@@ -55,9 +55,27 @@ For more information about the OPM follow the online documentation:
 L<https://docs.greenbone.net/API/OMP/omp.html>
 
 
-=head2 EXPORT
+=head2 CLASSES
 
-None by default.
+=over 4
+
+=item * L<Net::OpenVAS> : Wrapper class for L<Net::OpenVAS::OMP>
+
+=item * L<Net::OpenVAS::Error> : Helper error class
+
+=item * L<Net::OpenVAS::OMP> : Provides high-level interface for OpenVAS OMP protocol
+
+=over 4
+
+=item * L<Net::OpenVAS::OMP::Request> : Helper class for OMP request
+
+=item * L<Net::OpenVAS::OMP::Response> : Helper class for OMP response
+
+=back
+
+=back
+
+
 
 =head1 SUPPORT
 
