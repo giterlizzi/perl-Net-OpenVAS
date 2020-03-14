@@ -1,0 +1,7 @@
+# Do not complain about regex shorten that this
+[RegularExpressions::RequireExtendedFormatting]
+minimum_regex_length_to_complain_about = 20
+ 
+# Complain about regex with no scaped white spaces
+[RegularExpressions::RequireExtendedFormatting]
+strict = 1

@@ -1,0 +1,11 @@
+Changes
+lib/Net/OpenVAS.pm
+lib/Net/OpenVAS/Error.pm
+lib/Net/OpenVAS/OMP.pm
+lib/Net/OpenVAS/OMP/Request.pm
+lib/Net/OpenVAS/OMP/Response.pm
+Makefile.PL
+MANIFEST
+README
+t/00-load.t
+t/10-response.t
