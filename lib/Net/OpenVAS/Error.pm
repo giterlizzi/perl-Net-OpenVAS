@@ -5,7 +5,7 @@ use strict;
 
 use overload q|""| => 'message', fallback => 1;
 
-our $VERSION = '0.099_01';
+our $VERSION = '0.100';
 
 #-------------------------------------------------------------------------------
 # CONSTRUCTOR

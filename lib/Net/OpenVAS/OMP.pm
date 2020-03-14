@@ -13,7 +13,7 @@ use Net::OpenVAS::Error;
 use Net::OpenVAS::OMP::Response;
 use Net::OpenVAS::OMP::Request;
 
-our $VERSION = '0.099_01';
+our $VERSION = '0.100';
 
 sub import {
 

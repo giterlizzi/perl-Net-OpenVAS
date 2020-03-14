@@ -9,6 +9,8 @@ use XML::Simple qw( :strict );
 
 use overload q|""| => 'raw', fallback => 1;
 
+our $VERSION = '0.100';
+
 sub new {
 
     my ( $class, %args ) = @_;

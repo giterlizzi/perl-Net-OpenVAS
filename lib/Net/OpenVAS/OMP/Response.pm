@@ -12,6 +12,8 @@ use Carp;
 
 use overload q|""| => 'raw', fallback => 1;
 
+our $VERSION = '0.100';
+
 sub new {
 
     my ( $class, %args ) = @_;
