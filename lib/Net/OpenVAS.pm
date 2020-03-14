@@ -24,7 +24,7 @@ Net::OpenVAS - Perl extension for OpenVAS Scanner
         password => 's3cr3t'
     ) or die "ERROR: $@";
 
-    my $task = $omp->create_task(
+    my $task = $openvas->create_task(
         name   => [ 'Scan created via Net::OpenVAS' ],
         target => { id => 'a800d5c7-3493-4f73-8401-c42e5f2bfc9c' },
         config => { id => 'daba56c8-73ec-11df-a475-002264764cea' }
@@ -36,14 +36,14 @@ Net::OpenVAS - Perl extension for OpenVAS Scanner
 
         say "Created task $task_id";
 
-        my $task_start = $omp->start_task( task_id => $task_id );
+        my $task_start = $openvas->start_task( task_id => $task_id );
 
         say "Task $task_id started (" . $task_start->status_text . ')' if ( $task_start->is_accepted );
 
     }
 
-    if ( $omp->error ) {
-        say "ERROR: " . $omp->error;
+    if ( $openvas->error ) {
+        say "ERROR: " . $openvas->error;
     }
 
 =head1 DESCRIPTION

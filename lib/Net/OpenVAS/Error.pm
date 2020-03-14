@@ -47,22 +47,22 @@ __END__
 
 =head1 NAME
 
-Net::SecurityCenter::Error - Error helper for Net::SecurityCenter
+Net::OpenVAS::Error - Error helper for Net::OpenVAS
 
 
 =head1 SYNOPSIS
 
-    use Net::SecurityCenter;
+    use Net::OpenVAS;
 
-    my $sc = Net::SecurityCenter('sc.example.org') or die "Error : " . $@;
+    my $openvas = Net::OpenVAS->new(
+        host     => 'localhost:9390',
+        username => 'admin',
+        password => 's3cr3t'
+    ) or die "ERROR: $@";
 
-    $sc->login('secman', 'password');
-
-    if ($sc->error) {
-        die $sc->error;
+    if ( $openvas->error ) {
+        say "ERROR: " . $openvas->error;
     }
-
-    $sc->logout();
 
 
 =head1 DESCRIPTION
@@ -72,7 +72,7 @@ Net::SecurityCenter::Error - Error helper for Net::SecurityCenter
 =head2 Bugs / Feature Requests
 
 Please report any bugs or feature requests through the issue tracker
-at L<https://github.com/giterlizzi/perl-Net-SecurityCenter/issues>.
+at L<https://github.com/giterlizzi/perl-Net-OpenVAS/issues>.
 You will be notified automatically of any progress on your issue.
 
 =head2 Source Code
@@ -80,9 +80,9 @@ You will be notified automatically of any progress on your issue.
 This is open source software.  The code repository is available for
 public review and contribution under the terms of the license.
 
-L<https://github.com/giterlizzi/perl-Net-SecurityCenter>
+L<https://github.com/giterlizzi/perl-Net-OpenVAS>
 
-    git clone https://github.com/giterlizzi/perl-Net-SecurityCenter.git
+    git clone https://github.com/giterlizzi/perl-Net-OpenVAS.git
 
 
 =head1 AUTHOR
@@ -96,7 +96,7 @@ L<https://github.com/giterlizzi/perl-Net-SecurityCenter>
 
 =head1 LICENSE AND COPYRIGHT
 
-This software is copyright (c) 2018-2020 by Giuseppe Di Terlizzi.
+This software is copyright (c) 2020 by Giuseppe Di Terlizzi.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
