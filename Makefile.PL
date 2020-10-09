@@ -18,7 +18,7 @@ WriteMakefile(
         'Test::More'   => '0',
     },
     PREREQ_PM => {
-        'XML::Smart::XS' => '0',
+        'XML::Hash::XS'   => '0',
         'IO::Socket::SSL' => '0'
     },
     META_MERGE => {
