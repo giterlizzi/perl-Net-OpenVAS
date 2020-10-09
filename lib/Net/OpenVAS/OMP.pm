@@ -228,6 +228,7 @@ sub error {
 }
 
 1;
+
 =head1 NAME
 
 Net::OpenVAS - Perl extension for OpenVAS Scanner

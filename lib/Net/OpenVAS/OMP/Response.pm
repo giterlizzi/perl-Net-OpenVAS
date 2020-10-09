@@ -25,7 +25,7 @@ sub new {
     croak q/Net::OpenVAS::OMP::Response ( 'request' => ... ) must be "Net::OpenVAS::OMP::Request" instance/
         if ( !ref $request eq 'Net::OpenVAS::OMP::Request' );
 
-    $response =~ s/<\?xml.*?\?>//; # Remove XML version and encoding from the response for XML report
+    $response =~ s/<\?xml.*?\?>//;    # Remove XML version and encoding from the response for XML report
 
     my $status      = ( $response =~ /(status)="([^"]*)"/ )[1];
     my $status_text = ( $response =~ /(status_text)="([^"]*)"/ )[1];

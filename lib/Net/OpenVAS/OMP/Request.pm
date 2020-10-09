@@ -19,7 +19,7 @@ sub new {
     my $arguments = $args{'arguments'};
 
     my $request = { $command => $arguments };
-    my $raw     = hash2xml( \%{$arguments}, root => $command, use_attr => 1, xml_decl => 0);
+    my $raw     = hash2xml( \%{$arguments}, root => $command, use_attr => 1, xml_decl => 0 );
 
     chomp($raw);
 
