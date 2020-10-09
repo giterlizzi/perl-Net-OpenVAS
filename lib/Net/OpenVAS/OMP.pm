@@ -7,7 +7,6 @@ use feature ':5.10';
 
 use Carp;
 use IO::Socket::SSL;
-use XML::Simple qw( :strict );
 
 use Net::OpenVAS::Error;
 use Net::OpenVAS::OMP::Response;
