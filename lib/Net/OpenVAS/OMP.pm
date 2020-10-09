@@ -13,7 +13,7 @@ use Net::OpenVAS::Error;
 use Net::OpenVAS::OMP::Response;
 use Net::OpenVAS::OMP::Request;
 
-our $VERSION = '0.100';
+our $VERSION = '0.200';
 
 sub import {
 
@@ -303,7 +303,7 @@ the REST request and response messages.
 
 =head2 $openvas->command ( $command [, \%arguments ] )
 
-Execute a command to OpenVAS via OMP and return L<Net::OpenVAS::OMP::Result> class instance.
+Execute a command to OpenVAS via OMP and return L<Net::OpenVAS::OMP::Response> class instance.
 
     my $task = $openvas->command( 'get_tasks', task_id => '46f15597-b721-403c-96a1-cce439af63a7' );
 
